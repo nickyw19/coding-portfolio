@@ -1,0 +1,189 @@
+.body {
+    text-align: left;
+    color: black; /* Black text fcolor*/
+}
+
+/* Format the left sidebar */
+.sidebar {
+    width: 35%; /* Set width to be 35% of the width of its containing (parent) element */
+    height: 100vh;  /* Set sidebar’s height to 100% of the viewport height */
+    position: fixed; /* Fix the element in place relative to the viewport */
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers items vertically */
+    padding-top: 145px;
+    padding-left: 70px;
+    padding-bottom: 150px;
+}
+
+/* Bold the 3 sections in the sidebar once it's displayed in the viewport  */
+.sidebar-link.active {
+  font-weight: bold; /* Apply bold style when active */
+}
+
+/* Animate the change (e.g. bolding of text) smoothly  */
+.sidebar-link {
+  transition: font-weight 0.4s ease;
+}
+
+/* Format name on sidebar */
+.sidebar-name {
+    font-size: xxx-large;
+}
+
+/* Format position on sidebar */
+.sidebar-position {
+    font-size: large;
+}
+
+/* Format brief description on sidebar */
+.sidebar-info {
+    font-size: medium;
+    margin-bottom: 50px;
+}
+
+/* Format all <a> elements inside an element with class .sidebar */
+.sidebar a {
+    text-decoration: none; /* Removes the default underline from links */
+    color: inherit; /* Use same color as its parent element */
+    margin-bottom: 15px;
+}
+
+/* Bold the <a> elements once user hovers over it */
+.sidebar a:hover {
+    font-weight: bold;
+}
+
+/* Enable smooth scrolling when navigating between anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Format middle section of sidebar */
+.sidebar-mid {
+    margin-bottom: 50px;
+}
+
+/* Format the GitHub and LinkedIn icons' spacing and positioning  */
+.svg-container {
+    display: flex; /* Enable Flexbox */
+    gap: 15px; /* or 4px, or 0 — whatever spacing you want */
+}
+
+/* Format the GitHub and LinkedIn icons' dimensions */
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Format the horizontal line dividers */
+.line {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    height: 1px;
+    width: 100%;
+}
+
+/* Format the right-side content */
+.content {
+    margin-left: 35%;  /* Push content to the right */
+    width: 65%; /* Set width to be 65% of the width of its containing (parent) element */
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 150px;
+}
+
+/* Format each segment of the content */
+.segment {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Format each experience entry */
+.exp_entry {
+    list-style-type: none; /* Removes bullet points */
+    margin-bottom: 40px;
+}
+
+/* Format each experience entry's position */
+.position {
+    font-size: medium;
+    margin-bottom: 5px;
+}
+
+/* Format each experience entry's date */
+.date {
+    font-size: small;
+    font-style: italic;
+}
+
+/* Format each experience entry's description */
+.description {
+    padding-left: 15px;
+}
+
+/* Format the link to resume */
+.resume_link {
+    text-decoration: none; /* Removes the default underline from links */
+}
+
+
+
+
+
+
+
+/* Format the projects section */
+.projects {
+    list-style-type: none; /* Removes bullet points */
+}
+
+/* Format the links in the projects section */
+.projects a {
+    text-decoration: none; /* Removes the default underline from links */
+}
+
+/* Format each project */
+.project {
+    margin-bottom: 40px;
+}
+
+/* Format each project's description */
+.project_desc {
+    margin-bottom: 5px;
+}
+
+/* Format the footer */
+.footer {
+  margin-top: 120px;
+  text-align: center;
+  color: #555;
+  font-size: small;
+}
+
+/* Format the hovering effect on the 3 sections in the sidebar */
+.hover-effect {
+  position: relative; /* Create a reference for the underline (hover effect) to be positioned appropriately  */
+  display: inline-block; /* Positions elements in a line */
+}
+
+/* Create an invisible underline that will become visible once hovered over */
+.hover-effect::before {
+  content: ""; /* Make the ::before element appear */
+  position: absolute; /* Set position of this pseudo-element to be relative to the nearest positioned parent element (.hover-effect) */
+  bottom: 0; /* Position pseudo-element to be at the bottom of the parent element */
+  left: 0; /* Stretch pseudo-element to the left edge of the parent element */
+  right: 0; /* Stretch pseudo-element to the right edge of the parent element */
+  height: 2px; /* Set height of underline */
+  background-color: black;
+  transform: scaleX(0); /* Make the underline initially invisible */
+  transform-origin: center; /* Underline emerges from the center and expands outward */
+  transition: transform 0.4s ease; /* Set expansion time and smoothness of transition */
+}
+
+/* Make the invisible underline visible */
+.hover-effect:hover::before {
+  transform: scaleX(1);
+}
