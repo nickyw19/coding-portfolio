@@ -11,9 +11,9 @@
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Stacks items vertically */
     justify-content: center; /* Centers items vertically */
-    padding-top: 145px;
-    padding-left: 70px;
-    padding-bottom: 150px;
+    padding-top: 9rem;
+    padding-left: 4rem;
+    padding-bottom: 9rem;
 }
 
 /* Bold the 3 sections in the sidebar once it's displayed in the viewport  */
@@ -39,14 +39,14 @@
 /* Format brief description on sidebar */
 .sidebar-info {
     font-size: medium;
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
 }
 
 /* Format all <a> elements inside an element with class .sidebar */
 .sidebar a {
     text-decoration: none; /* Removes the default underline from links */
     color: inherit; /* Use same color as its parent element */
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 /* Bold the <a> elements once user hovers over it */
@@ -61,26 +61,26 @@ html {
 
 /* Format middle section of sidebar */
 .sidebar-mid {
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
 }
 
 /* Format the GitHub and LinkedIn icons' spacing and positioning  */
 .svg-container {
     display: flex; /* Enable Flexbox */
-    gap: 15px; /* or 4px, or 0 — whatever spacing you want */
+    gap: 1rem;
 }
 
 /* Format the GitHub and LinkedIn icons' dimensions */
 .icon {
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
 }
 
 /* Format the horizontal line dividers */
 .line {
-    margin-top: 50px;
-    margin-bottom: 70px;
-    height: 1px;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    height: 0.1rem;
     width: 100%;
 }
 
@@ -90,27 +90,27 @@ html {
     width: 65%; /* Set width to be 65% of the width of its containing (parent) element */
     display: flex; /* Enables Flexbox */
     flex-direction: column; /* Stacks items vertically */
-    padding-top: 100px;
-    padding-left: 200px;
-    padding-right: 150px;
+    padding-top: 6rem;
+    padding-left: 13rem;
+    padding-right: 9rem;
 }
 
 /* Format each segment of the content */
 .segment {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Format each experience entry */
 .exp_entry {
     list-style-type: none; /* Removes bullet points */
-    margin-bottom: 40px;
+    margin-bottom: 3rem;
 }
 
 /* Format each experience entry's position */
 .position {
     font-size: medium;
-    margin-bottom: 5px;
+    margin-bottom: 0.3rem;
 }
 
 /* Format each experience entry's date */
@@ -121,19 +121,13 @@ html {
 
 /* Format each experience entry's description */
 .description {
-    padding-left: 15px;
+    padding-left: 1rem;
 }
 
 /* Format the link to resume */
 .resume_link {
     text-decoration: none; /* Removes the default underline from links */
 }
-
-
-
-
-
-
 
 /* Format the projects section */
 .projects {
@@ -147,17 +141,17 @@ html {
 
 /* Format each project */
 .project {
-    margin-bottom: 40px;
+    margin-bottom: 3rem;
 }
 
 /* Format each project's description */
 .project_desc {
-    margin-bottom: 5px;
+    margin-bottom: 0.3rem;
 }
 
 /* Format the footer */
 .footer {
-  margin-top: 120px;
+  margin-top: 8rem;
   text-align: center;
   color: #555;
   font-size: small;
@@ -176,7 +170,7 @@ html {
   bottom: 0; /* Position pseudo-element to be at the bottom of the parent element */
   left: 0; /* Stretch pseudo-element to the left edge of the parent element */
   right: 0; /* Stretch pseudo-element to the right edge of the parent element */
-  height: 2px; /* Set height of underline */
+  height: 0.1rem; /* Set height of underline */
   background-color: black;
   transform: scaleX(0); /* Make the underline initially invisible */
   transform-origin: center; /* Underline emerges from the center and expands outward */
