@@ -14,8 +14,9 @@ body {
     position: fixed; /* Fix the element in place relative to the viewport */
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Stacks items vertically */
-    justify-content: center; /* Centers items vertically */
-    padding-left: 4rem;
+    justify-content: flex-start; /* Align elements to the top */
+    padding-left: 7rem;
+    padding-top: 7rem;
 }
 
 /* Format the right-side content */
@@ -24,7 +25,7 @@ body {
     height: auto; /* Height of the element adjusts based on its content */
     display: flex; /* Enables Flexbox */
     flex-direction: column; /* Stacks items vertically */
-    padding-top: 0rem;
+    padding-top: 7rem;
     padding-left: 13rem;
     padding-right: 9rem;
 }
@@ -85,11 +86,6 @@ body {
     margin-bottom: 4rem;
     height: 0.1rem;
     width: 100%;
-}
-
-/* Format the About Me section */
-.about_me {
-    padding-top: 7rem;
 }
 
 /* Format each experience entry */
@@ -173,13 +169,18 @@ body {
   transform: scaleX(1);
 }
 
-/* Formate webpage for larger screens (e.g. Desktop PC) */
+/* Format webpage for larger screens (e.g. Desktop PC) */
 @media (min-width: 1600px) {
   html {
     font-size: 23px;
   }
-  .about_me {
-    padding-top: 10rem;
+
+  .sidebar {
+    padding-left: 2rem;
+  }
+
+  .section {
+    margin-bottom: 5rem;
   }
 }
 
@@ -189,16 +190,19 @@ body {
     font-size: 15px;
   }
   .sidebar {
-    position: static; /* Make Sidebar scrollable for mobiles */
+    position: static; /* Make Sidebar non-fixed relative to viewport */
     width: 100%; /* Extend Sidebar to fill entire width of viewport */
-    padding: 2rem;
+    padding-top: 12rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
   }
   .content {
     margin-left: 0;
-    padding: 2rem;
-  }
-  .about_me {
     padding-top: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
