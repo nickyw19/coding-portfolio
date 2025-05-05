@@ -1,6 +1,10 @@
-.body {
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling when navigating between anchor links */
+}
+
+body {
     text-align: left;
-    color: black; /* Black text fcolor*/
+    color: black; /* Set text color to black*/
 }
 
 /* Format the left sidebar */
@@ -11,40 +15,44 @@
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Stacks items vertically */
     justify-content: center; /* Centers items vertically */
-    padding-top: 9rem;
     padding-left: 4rem;
-    padding-bottom: 9rem;
 }
 
-/* Bold the 3 sections in the sidebar once it's displayed in the viewport  */
-.sidebar-link.active {
-  font-weight: bold; /* Apply bold style when active */
+/* Format the right-side content */
+.content {
+    margin-left: 35%;  /* Push content to the right */
+    height: auto; /* Height of the element adjusts based on its content */
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    padding-top: 0rem;
+    padding-left: 13rem;
+    padding-right: 9rem;
 }
 
-/* Animate the change (e.g. bolding of text) smoothly  */
-.sidebar-link {
-  transition: font-weight 0.4s ease;
+/* Format each section in the right-side content */
+.section {
+    margin-bottom: 1.5rem;
 }
 
 /* Format name on sidebar */
 .sidebar-name {
-    font-size: xxx-large;
+    font-size: 3rem;
 }
 
 /* Format position on sidebar */
 .sidebar-position {
-    font-size: large;
+    font-size: 1.2rem;
 }
 
 /* Format brief description on sidebar */
 .sidebar-info {
-    font-size: medium;
+    font-size: 1rem;
     margin-bottom: 3rem;
 }
 
 /* Format all <a> elements inside an element with class .sidebar */
 .sidebar a {
-    text-decoration: none; /* Removes the default underline from links */
+    text-decoration: none; /* Remove the default underline from links */
     color: inherit; /* Use same color as its parent element */
     margin-bottom: 1rem;
 }
@@ -54,23 +62,18 @@
     font-weight: bold;
 }
 
-/* Enable smooth scrolling when navigating between anchor links */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Format middle section of sidebar */
 .sidebar-mid {
     margin-bottom: 3rem;
 }
 
-/* Format the GitHub and LinkedIn icons' spacing and positioning  */
+/* Format the positioning of the GitHub and LinkedIn icons */
 .svg-container {
     display: flex; /* Enable Flexbox */
     gap: 1rem;
 }
 
-/* Format the GitHub and LinkedIn icons' dimensions */
+/* Format the dimensions of the GitHub and LinkedIn icons */
 .icon {
   width: 3rem;
   height: 3rem;
@@ -84,21 +87,9 @@ html {
     width: 100%;
 }
 
-/* Format the right-side content */
-.content {
-    margin-left: 35%;  /* Push content to the right */
-    width: 65%; /* Set width to be 65% of the width of its containing (parent) element */
-    display: flex; /* Enables Flexbox */
-    flex-direction: column; /* Stacks items vertically */
-    padding-top: 6rem;
-    padding-left: 13rem;
-    padding-right: 9rem;
-}
-
-/* Format each segment of the content */
-.segment {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+/* Format the About Me section */
+.about_me {
+    padding-top: 7rem;
 }
 
 /* Format each experience entry */
@@ -129,14 +120,14 @@ html {
     text-decoration: none; /* Removes the default underline from links */
 }
 
+/* Format the links in the project section */
+.projects a {
+    text-decoration: none; /* Removes the default underline from links */
+}
+
 /* Format the projects section */
 .projects {
     list-style-type: none; /* Removes bullet points */
-}
-
-/* Format the links in the projects section */
-.projects a {
-    text-decoration: none; /* Removes the default underline from links */
 }
 
 /* Format each project */
@@ -181,3 +172,39 @@ html {
 .hover-effect:hover::before {
   transform: scaleX(1);
 }
+
+/* Formate webpage for larger screens (e.g. Desktop PC) */
+@media (min-width: 1600px) {
+  html {
+    font-size: 23px;
+  }
+  .about_me {
+    padding-top: 10rem;
+  }
+}
+
+/* Format webpage for smaller screens (e.g. mobile screens) */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  .sidebar {
+    position: static; /* Make Sidebar scrollable for mobiles */
+    width: 100%; /* Extend Sidebar to fill entire width of viewport */
+    padding: 2rem;
+  }
+  .content {
+    margin-left: 0;
+    padding: 2rem;
+  }
+  .about_me {
+    padding-top: 0rem;
+  }
+}
+
+
+
+
+
+
+
