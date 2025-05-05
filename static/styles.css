@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth; /* Enable smooth scrolling when navigating between anchor links */
+    scroll-behavior: smooth; /* Enable smooth scrolling when navigating between anchor links */
 }
 
 body {
@@ -25,7 +25,7 @@ body {
     height: auto; /* Height of the element adjusts based on its content */
     display: flex; /* Enables Flexbox */
     flex-direction: column; /* Stacks items vertically */
-    padding-top: 8rem;
+
     padding-left: 13rem;
     padding-right: 9rem;
 }
@@ -76,8 +76,12 @@ body {
 
 /* Format the dimensions of the GitHub and LinkedIn icons */
 .icon {
-  width: 3rem;
-  height: 3rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.about_me {
+    padding-top: 8rem;
 }
 
 /* Format the horizontal line dividers */
@@ -138,72 +142,72 @@ body {
 
 /* Format the footer */
 .footer {
-  margin-top: 8rem;
-  text-align: center;
-  color: #555;
-  font-size: small;
+    margin-top: 8rem;
+    text-align: center;
+    color: #555;
+    font-size: small;
 }
 
 /* Format the hovering effect on the 3 sections in the sidebar */
 .hover-effect {
-  position: relative; /* Create a reference for the underline (hover effect) to be positioned appropriately  */
-  display: inline-block; /* Positions elements in a line */
+    position: relative; /* Create a reference for the underline (hover effect) to be positioned appropriately  */
+    display: inline-block; /* Positions elements in a line */
 }
 
 /* Create an invisible underline that will become visible once hovered over */
 .hover-effect::before {
-  content: ""; /* Make the ::before element appear */
-  position: absolute; /* Set position of this pseudo-element to be relative to the nearest positioned parent element (.hover-effect) */
-  bottom: 0; /* Position pseudo-element to be at the bottom of the parent element */
-  left: 0; /* Stretch pseudo-element to the left edge of the parent element */
-  right: 0; /* Stretch pseudo-element to the right edge of the parent element */
-  height: 0.1rem; /* Set height of underline */
-  background-color: black;
-  transform: scaleX(0); /* Make the underline initially invisible */
-  transform-origin: center; /* Underline emerges from the center and expands outward */
-  transition: transform 0.4s ease; /* Set expansion time and smoothness of transition */
+    content: ""; /* Make the ::before element appear */
+    position: absolute; /* Set position of this pseudo-element to be relative to the nearest positioned parent element (.hover-effect) */
+    bottom: 0; /* Position pseudo-element to be at the bottom of the parent element */
+    left: 0; /* Stretch pseudo-element to the left edge of the parent element */
+    right: 0; /* Stretch pseudo-element to the right edge of the parent element */
+    height: 0.1rem; /* Set height of underline */
+    background-color: black;
+    transform: scaleX(0); /* Make the underline initially invisible */
+    transform-origin: center; /* Underline emerges from the center and expands outward */
+    transition: transform 0.4s ease; /* Set expansion time and smoothness of transition */
 }
 
 /* Make the invisible underline visible */
 .hover-effect:hover::before {
-  transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 /* Format webpage for larger screens (e.g. Desktop PC) */
 @media (min-width: 1600px) {
-  html {
-    font-size: 23px;
-  }
+    html {
+        font-size: 23px;
+    }
 
-  .sidebar {
-    padding-left: 2rem;
-  }
+    .sidebar {
+        padding-left: 2rem;
+    }
 
-  .section {
-    margin-bottom: 5rem;
-  }
+    .section {
+        margin-bottom: 5rem;
+    }
 }
 
 /* Format webpage for smaller screens (e.g. mobile screens) */
 @media (max-width: 768px) {
-  html {
-    font-size: 15px;
-  }
-  .sidebar {
-    position: static; /* Make Sidebar non-fixed relative to viewport */
-    width: 100%; /* Extend Sidebar to fill entire width of viewport */
-    padding-top: 12rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-  }
-  .content {
-    margin-left: 0;
-    padding-top: 0rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-  }
+    html {
+        font-size: 15px;
+    }
+    .sidebar {
+        position: static; /* Make Sidebar non-fixed relative to viewport */
+        width: 100%; /* Extend Sidebar to fill entire width of viewport */
+        padding-top: 12rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+    .content {
+        margin-left: 0;
+        padding-top: 0rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
 }
 
 
