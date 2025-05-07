@@ -25,7 +25,6 @@ body {
     height: auto; /* Height of the element adjusts based on its content */
     display: flex; /* Enables Flexbox */
     flex-direction: column; /* Stacks items vertically */
-
     padding-left: 13rem;
     padding-right: 9rem;
 }
@@ -179,11 +178,9 @@ body {
     html {
         font-size: 23px;
     }
-
     .sidebar {
         padding-left: 2rem;
     }
-
     .section {
         margin-bottom: 5rem;
     }
